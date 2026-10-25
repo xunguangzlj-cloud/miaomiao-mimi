@@ -1,0 +1,12 @@
+{
+  "name": "miaomiao-mimi",
+  "version": "1.5.4",
+  "private": true,
+  "description": "喵喵谜谜小屋：99关精选题、每日各3次提示与助手、12种小屋主题和8种头像框",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "build:preview": "node tools/build-preview.cjs",
+    "check:package": "node tools/check-package.cjs",
+    "generate:levels": "node tools/generate-levels.cjs"
+  }
+}

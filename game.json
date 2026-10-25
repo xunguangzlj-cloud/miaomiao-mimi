@@ -1,0 +1,32 @@
+{
+  "deviceOrientation": "portrait",
+  "showStatusBar": false,
+  "resizable": false,
+  "openDataContext": "open-data",
+  "subpackages": [
+    {
+      "name": "celebration",
+      "root": "celebration-assets/"
+    },
+    {
+      "name": "animals",
+      "root": "animal-assets/"
+    },
+    {
+      "name": "audio",
+      "root": "audio-assets/"
+    },
+    {
+      "name": "splash",
+      "root": "splash-assets/"
+    },
+    {
+      "name": "ui",
+      "root": "ui-assets/"
+    },
+    {
+      "name": "garden",
+      "root": "garden-assets/"
+    }
+  ]
+}

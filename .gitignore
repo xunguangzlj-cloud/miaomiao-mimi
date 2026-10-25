@@ -1,0 +1,15 @@
+node_modules/
+work/
+outputs/
+coverage/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.log
+project.private.config.json
+.DS_Store
+Thumbs.db
