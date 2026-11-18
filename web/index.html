@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#FFF9EF">
+  <title>喵喵谜谜小屋 · 一格一猫</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#EAEFF3;color:#935A5A;font-family:system-ui,"Microsoft YaHei",sans-serif;min-height:100dvh;display:grid;place-items:center}
+    main{display:flex;align-items:center;gap:64px;padding:28px;max-width:1000px;width:100%;justify-content:center}
+    .intro{max-width:310px} .tag{font-size:12px;letter-spacing:4px;color:#637D69}h1{font-size:44px;font-weight:600;letter-spacing:3px;margin:18px 0}p{font-size:15px;line-height:1.9;color:#69796E}ol{padding:0;list-style:none;counter-reset:steps}li{margin:20px 0;font-size:14px;line-height:1.7;counter-increment:steps}li:before{content:'0' counter(steps);display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:#D3DDC6;border-radius:10px;margin-right:12px;font-size:11px}small{color:#859180;font-size:12px}
+    .phone{width:390px;max-width:100%;background:#F7F2EF;border-radius:30px;box-shadow:0 18px 55px #61745726;border:8px solid #FAFBF3;overflow:hidden;flex-shrink:0}canvas{display:block;width:100%;height:auto;aspect-ratio:1/2;outline:none}canvas:focus-visible{outline:3px solid #4AA3DB;outline-offset:-3px}
+    #status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+    @media(max-width:760px){html,body{overflow:hidden}body{background:#F7F2EF}main{padding:0;display:block;width:min(100%,390px)}.intro{display:none}.phone{width:100%;border:0;border-radius:0;box-shadow:none}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="intro"><div class="tag">一 格 一 猫 · 慢 慢 想</div><h1>喵喵谜谜小屋</h1><p>给每只猫安排一个刚刚好的位置。<br>不用赶时间，把每一格想清楚。</p><ol><li>每行、每列各一只猫</li><li>每个颜色区域各一只猫</li><li>猫之间不能紧挨着</li></ol><small>99 道逻辑题 · 进度保存在当前设备</small></section>
+    <section class="phone" aria-label="喵喵谜谜小屋游戏"><canvas id="game" tabindex="0" aria-label="找猫棋盘。单击标记，双击放猫，也可切换放置模式。"></canvas></section>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="preview.js"></script>
+</body>
+</html>

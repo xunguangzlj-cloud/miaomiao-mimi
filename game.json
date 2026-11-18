@@ -1,0 +1,20 @@
+{
+  "deviceOrientation": "portrait",
+  "showStatusBar": false,
+  "resizable": false,
+  "openDataContext": "open-data",
+  "subpackages": [
+    {
+      "name": "animals",
+      "root": "animal-assets/"
+    },
+    {
+      "name": "splash",
+      "root": "splash-assets/"
+    },
+    {
+      "name": "garden",
+      "root": "garden-assets/"
+    }
+  ]
+}
